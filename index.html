@@ -2,177 +2,193 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://cdn.boxicons.com/3.0.3/fonts/basic/boxicons.min.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jacob — Coder & Designer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600&family=Adamina&display=swap" rel="stylesheet">
 </head>
-
 
 <body>
 
-    <nav>
-        <a href="#" class="logo"><span>Portfolio</span></a>
-        <ul class="links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+  <!-- ── NAV ─────────────────────────────────────────── -->
+  <nav>
+    <a href="#home" class="nav-logo">Jacob</a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#tech">Tech</a></li>
+      <li><a href="#projects">Project</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="https://next-blog-jacoy-yue.vercel.app/" class="nav-github-link" target="_blank" rel="noopener">
+      My Blog
+    </a>
+  </nav>
+
+  <!-- ── HERO ─────────────────────────────────────────── -->
+  <section id="home">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <h1>
+          Coder &amp; Designer<br>
+          Based in Xiamen<br>
+          Hi, I am &nbsp;Jacoy<br>
+          Student in XMU
+        </h1>
+        <a href="https://github.com/meloer101" class="github-link" target="_blank" rel="noopener">
+          <img src="src/Github.png" alt="GitHub" class="github-icon">
+          visit my github
+        </a>
+      </div>
+      <div class="hero-right">
+        <img src="src/Hero.png" alt="Jacob" class="hero-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ─────────────────────────────────────────── -->
+  <section id="about">
+    <div class="about-left">
+      <img src="src/Career.png" alt="Jacob" class="about-portrait">
+    </div>
+    <div class="about-right">
+      <div class="about-top">
+        <img src="src/School.png" alt="XMU" class="school-img">
+        <span class="anthropology">Anthropology</span>
+      </div>
+      <div class="about-bio-block">
+        <p>
+          我目前聚焦三个方向: Design — 在这个设计被严重低估的环境中，探索如何通过细节传递开发者的诚意与审美，让用户体验真正被尊重。 Programming — 研究如何借助AI实现更快、更高质量的开发。 AI — 在浪潮激荡之际，寻找更具前瞻性的商业模式与产品思维。
+        </p>
+        <p>
+          人生一场，希冀之事乃是将有限的时间用于真正有意义之事，科技发展的唯一目的当是帮"人"简化甚至消除那些琐碎重复。真正的产品，应当看起来美观，用起来舒适，当身边围绕的都是高质量的人，使用的是高质量的工具，自然输出的是高质量的结果，过的是高质量的人生。
+        </p>
+        <p class="quote">
+          small minds talk about people, good minds talk about events, great minds talk about ideas.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TECH ─────────────────────────────────────────── -->
+  <section id="tech">
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Frontend Development</h3>
+        <div class="skill-line"></div>
+        <p>Building modern, responsive web applications with React, Next.js, and Tailwind CSS. Pixel-perfect implementations that perform beautifully across all devices.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Frontend Development</h3>
+        <div class="skill-line"></div>
+        <p>Building modern, responsive web applications with React, Next.js, and Tailwind CSS. Pixel-perfect implementations that perform beautifully across all devices.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Frontend Development</h3>
+        <div class="skill-line"></div>
+        <p>Building modern, responsive web applications with React, Next.js, and Tailwind CSS. Pixel-perfect implementations that perform beautifully across all devices.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Frontend Development</h3>
+        <div class="skill-line"></div>
+        <p>Building modern, responsive web applications with React, Next.js, and Tailwind CSS. Pixel-perfect implementations that perform beautifully across all devices.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ────────────────────────────────────── -->
+  <section id="projects">
+    <div class="project-item">
+      <div class="project-left">
+        <h3>Node.js Web Service</h3>
+      </div>
+      <div class="project-right">
+        <p class="project-desc">A production-grade web service built with Node.js and Express, featuring RESTful APIs, authentication, and database integration.</p>
+        <ul class="project-features">
+          <li>RESTful API design with Express.js</li>
+          <li>MySQL &amp; MongoDB data layer</li>
+          <li>JWT authentication &amp; middleware</li>
         </ul>
+      </div>
+    </div>
+    <div class="project-item">
+      <div class="project-left">
+        <h3>Node.js Web Service</h3>
+      </div>
+      <div class="project-right">
+        <p class="project-desc">A production-grade web service built with Node.js and Express, featuring RESTful APIs, authentication, and database integration.</p>
+        <ul class="project-features">
+          <li>RESTful API design with Express.js</li>
+          <li>MySQL &amp; MongoDB data layer</li>
+          <li>JWT authentication &amp; middleware</li>
+        </ul>
+      </div>
+    </div>
+    <div class="project-item">
+      <div class="project-left">
+        <h3>Node.js Web Service</h3>
+      </div>
+      <div class="project-right">
+        <p class="project-desc">A production-grade web service built with Node.js and Express, featuring RESTful APIs, authentication, and database integration.</p>
+        <ul class="project-features">
+          <li>RESTful API design with Express.js</li>
+          <li>MySQL &amp; MongoDB data layer</li>
+          <li>JWT authentication &amp; middleware</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-        <i class='bxrds  bx-menu-right' id="menu"></i>
-        <a href="#contact" class="btn">Contact me</a>
-    </nav>
+  <!-- ── BLOG ──────────────────────────────────────────── -->
+  <section id="blog">
+    <div class="blog-left">
+      <h2 class="blog-title">Blog</h2>
+      <ul class="blog-list">
+        <li class="blog-item">
+          <span class="blog-date">April 9, 2024</span>
+          <span class="blog-name">森林里分出了两条路：AI创业的两种不同路径</span>
+        </li>
+        <div class="blog-line"></div>
+        <li class="blog-item">
+          <span class="blog-date">April 9, 2024</span>
+          <span class="blog-name">森林里分出了两条路：AI创业的两种不同路径</span>
+        </li>
+        <div class="blog-line"></div>
+        <li class="blog-item">
+          <span class="blog-date">April 9, 2024</span>
+          <span class="blog-name">森林里分出了两条路：AI创业的两种不同路径</span>
+        </li>
+        <div class="blog-line"></div>
+      </ul>
+    </div>
+    <div class="blog-right">
+      <img src="src/Blog.png" alt="Blog" class="blog-img">
+    </div>
+  </section>
 
-    <section id="home">
-        <img src="head.jpg" alt="">
+  <!-- ── CTA / CONTACT ─────────────────────────────────── -->
+  <section id="contact">
+    <img src="src/CTA1.png" alt="" class="cta-deco cta-deco--left">
+    <div class="cta-center">
+      <p class="cta-text">Curious about what we can create together? Let's bring something extraordinary to life!</p>
+      <div class="social-icons">
+        <a href="https://github.com/meloer101" target="_blank" rel="noopener">
+          <img src="src/Github.png" alt="GitHub">
+        </a>
+        <a href="#" target="_blank" rel="noopener">
+          <img src="src/Ins.png" alt="Instagram">
+        </a>
+        <a href="mailto:jabyu80@gmail.com">
+          <img src="src/Gmail.png" alt="Gmail">
+        </a>
+      </div>
+    </div>
+    <img src="src/CTA2.png" alt="" class="cta-deco cta-deco--right">
+  </section>
 
-        <div class="info-box">
-            <h1><span>Hello, I'm JacoY</span></h1>
-            <h3><span>Front-end Developer</span>based in Xiamen</h3>
-            <p>Hello, I'm a front-end developer based in Xiamen. I love creating beautiful and functional websites. I
-                have a passion for design and a knack for turning ideas into reality. I'm always looking for new
-                challenges and opportunities to grow as a developer. </p>
-
-            <div class="btn-box">
-                <a href="#" class="btn">Hire me</a>
-                <a href="#" class="btn">Contact Me</a>
-            </div>
-
-
-    </section>
-
-    <section id="about">
-        <div class="about-box">
-            <div class="about-info">
-                <h1><span>About Me</span></h1>
-                <p>Hello, I'm a front-end developer based in Xiamen. I love creating beautiful and functional
-                    websites.have a passion for design and a knack for turning ideas into reality. I'm always looking
-                    for new challenges and opportunities to grow as a developer. </p>
-            </div>
-
-            <h2><span>Skills</span></h2>
-
-            <div class="skills">
-                <ul>
-                    <li>
-                        <span><i class='bxrds  bx-chevron-right'></i> HTML</span>
-                    </li>
-                    <li>
-                        <span><i class='bxrds  bx-chevron-right'></i> CSS</span>
-                    </li>
-                    <li>
-                        <span><i class='bxrds  bx-chevron-right'></i> JAVASCRIPT</span>
-                    </li>
-                    <li>
-                        <span><i class='bxrds  bx-chevron-right'></i> VUE</span>
-                    </li>
-
-                </ul>
-                <ul>
-                    <li>
-                        <span><i class='bxrds  bx-chevron-right'></i> REACT</span>
-                    </li>
-                    <li>
-                        <span><i class='bxrds  bx-chevron-right'></i> NODE</span>
-                    </li>
-                    <li>
-                        <span><i class='bxrds  bx-chevron-right'></i> GO</span>
-                    </li>
-                    <li>
-                        <span><i class='bxrds  bx-chevron-right'></i> MySQL</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <img src="about.jpg" alt="">
-    </section>
-
-    <section id="services">
-        <h1 class="header"><span>Services</span></h1>
-        <div class="services-container">
-            <div class="box">
-                <h1><span>Web Design</span></h1>
-
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi iure repudiandae incidunt obcaecati
-                    consectetur ipsum accusantium, earum repellendus, est consequatur natus. Excepturi iste voluptatibus
-                    quas, earum alias architecto nesciunt necessitatibus!
-                </p>
-                <img src="web-design.jpg" alt="">
-            </div>
-
-            <div class="box">
-                <h1><span>UI/UX Design</span></h1>
-
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi iure repudiandae incidunt obcaecati
-                    consectetur ipsum accusantium, earum repellendus, est consequatur natus. Excepturi iste voluptatibus
-                    quas, earum alias architecto nesciunt necessitatibus!
-                </p>
-                <img src="UI-design.jpg" alt="">
-            </div>
-        </div>
-
-    </section>
-
-    <section id="contact">
-        <h1 class="header"><span>Contact</span></h1>
-
-        <form action="#">
-            <div class="input-box">
-                <span>Full Name</span>
-                <input type="text" placeholder="Enter your full name">
-            </div>
-            <div class="input-box">
-                <span>Your Email</span>
-                <input type="text" placeholder="Enter your Email">
-            </div>
-            <div class="input-box">
-                <span>Message</span>
-                <input type="text" placeholder="Enter your Message">
-            </div>
-
-            <div class="btn">Submit</div>
-        </form>
-    </section>
-
-    <footer>
-
-        <div class="col-left">
-            <div class="col-box">
-                <span><i class='bxrds  bx-location-alt-2'></i> </span>
-                <span>simingsouthroad,XMU,Xiamen,Fujian</span>
-            </div>
-
-            <div class="col-box">
-                <span><i class='bxrds  bx-phone-plus'></i> </span>
-                <span>+86 18030062768</span>
-            </div>
-            <div class="col-box">
-                <span><i class='bxrds  bx-envelope-open'></i> </span>
-                <span>jabyu80@gmail.con</span>
-            </div>
-
-        </div>
-
-        <div class="col-right">
-            <span>About My services</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odio libero nesciunt debitis quos culpa
-                ducimus illo officia. Dolor, accusamus! Harum exercitationem, delectus ut hic vitae repellat dignissimos
-                nesciunt ex?</p>
-            <div class="social-icons">
-                <span><i class='bxrds  bx-institution'></i></span>
-                <span><i class='bxr  bx-heart-square'></i> </span>
-                <span><i class='bxr  bx-heart-square'></i></span>
-                <span><i class='bxr  bx-shield-quarter'></i></span>
-            </div>
-        </div>
-    </footer>
-
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
