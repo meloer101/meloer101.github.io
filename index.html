@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jacob — Coder & Designer</title>
+  <title>余跃 Jacob — UIUX 设计师 & 产品经理</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600&family=Adamina&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;900&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <!-- 动态背景层 -->
+  <div class="bg-mesh"></div>
+  <div class="cursor-glow"></div>
 
   <!-- ── NAV ─────────────────────────────────────────── -->
   <nav>
-    <a href="#home" class="nav-logo">Jacob</a>
+    <a href="#home" class="nav-logo">Jacob.</a>
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#tech">Tech</a></li>
-      <li><a href="#projects">Project</a></li>
-      <li><a href="#blog">Blog</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
     </ul>
     <a href="https://next-blog-jacoy-yue.vercel.app/" class="nav-github-link" target="_blank" rel="noopener">
       My Blog
@@ -28,165 +30,184 @@
   </nav>
 
   <!-- ── HERO ─────────────────────────────────────────── -->
-  <section id="home">
+  <section id="home" class="section-padding">
     <div class="hero-inner">
-      <div class="hero-left">
-        <h1>
-          Coder &amp; Designer<br>
-          Based in Xiamen<br>
-          Hi, I am &nbsp;Jacoy<br>
-          Student in XMU
+      <div class="hero-content" data-animate="fadeInUp">
+        <div class="hero-badge" data-animate="scaleIn">UIUX Designer / Product Manager / Vibe Coder</div>
+        <h1 data-stagger>
+          <span>Hi, 我是余跃.</span><br>
+          <span>探索体验的秩序，</span><br>
+          <span>构建<em class="serif-italic">透明而深刻</em>的产品。</span>
         </h1>
-        <a href="https://github.com/meloer101" class="github-link" target="_blank" rel="noopener">
-          <img src="src/Github.png" alt="GitHub" class="github-icon">
-          visit my github
-        </a>
-      </div>
-      <div class="hero-right">
-        <img src="src/Hero.png" alt="Jacob" class="hero-img">
+        <p class="hero-desc" data-animate="fadeInUp">
+          厦门大学 · 社会与人类学院 · 人类学<br>
+          关注 AI 技术如何被优雅地感知，致力于消除信息差。
+        </p>
+        <div class="hero-actions" data-animate="fadeInUp">
+          <a href="#about" class="btn-primary magnetic-btn">了解更多</a>
+          <a href="https://github.com/meloer101" class="btn-secondary magnetic-btn" target="_blank" rel="noopener">
+            GitHub
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ── ABOUT ─────────────────────────────────────────── -->
-  <section id="about">
-    <div class="about-left">
-      <img src="src/Career.png" alt="Jacob" class="about-portrait">
-    </div>
-    <div class="about-right">
-      <div class="about-top">
-        <img src="src/School.png" alt="XMU" class="school-img">
-        <span class="anthropology">Anthropology</span>
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="section-header" data-animate="fadeInUp">
+        <h2 class="serif-title">Philosophy</h2>
+        <p class="section-subtitle">关于产品、设计与技术的思考</p>
       </div>
-      <div class="about-bio-block">
-        <p>
-          我目前聚焦三个方向: Design — 在这个设计被严重低估的环境中，探索如何通过细节传递开发者的诚意与审美，让用户体验真正被尊重。 Programming — 研究如何借助AI实现更快、更高质量的开发。 AI — 在浪潮激荡之际，寻找更具前瞻性的商业模式与产品思维。
-        </p>
-        <p>
-          人生一场，希冀之事乃是将有限的时间用于真正有意义之事，科技发展的唯一目的当是帮"人"简化甚至消除那些琐碎重复。真正的产品，应当看起来美观，用起来舒适，当身边围绕的都是高质量的人，使用的是高质量的工具，自然输出的是高质量的结果，过的是高质量的人生。
-        </p>
-        <p class="quote">
-          small minds talk about people, good minds talk about events, great minds talk about ideas.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── TECH ─────────────────────────────────────────── -->
-  <section id="tech">
-    <div class="skills-grid">
-      <div class="skill-card">
-        <h3>Frontend Development</h3>
-        <div class="skill-line"></div>
-        <p>Building modern, responsive web applications with React, Next.js, and Tailwind CSS. Pixel-perfect implementations that perform beautifully across all devices.</p>
-      </div>
-      <div class="skill-card">
-        <h3>Backend Development</h3>
-        <div class="skill-line"></div>
-        <p>Designing robust server architectures with Node.js, Express, and databases like MySQL and MongoDB. APIs that scale, systems that last.</p>
-      </div>
-      <div class="skill-card">
-        <h3>AI & Agent Frameworks</h3>
-        <div class="skill-line"></div>
-        <p>Exploring the frontier of AI-powered applications with Google ADK and LangChain. Building intelligent agents that solve real problems, not just demos.</p>
-      </div>
-      <div class="skill-card">
-        <h3>Design & Prototyping</h3>
-        <div class="skill-line"></div>
-        <p>Crafting interfaces in Figma and Framer with a focus on clarity and delight. Design that serves the user, not the designer's ego.</p>
+      
+      <div class="about-grid">
+        <div class="glass-card about-card" data-animate="fadeInUp">
+          <div class="card-icon">✦</div>
+          <h3>体验的秩序</h3>
+          <p>我始终相信，好的产品不是功能的堆叠，而是一种体验的秩序——它在复杂世界中建立清晰的路径，让人无需思考便能自然前行。我关注的不只是“能不能用”，而是“为什么这样用”，以及在每一次点击、每一次反馈背后，产品是如何与人产生共鸣。</p>
+        </div>
+        
+        <div class="glass-card about-card" data-animate="fadeInUp" style="transition-delay: 0.1s">
+          <div class="card-icon">✧</div>
+          <h3>开源与连接</h3>
+          <p>我被消除信息差这件事深深吸引。信息本不该成为壁垒，而应成为流动的空气，被更高效、更公平地传递与重构。我认同并践行开源精神：让知识被共享，让思想自由流动，让个体可以在连接中不断放大自身的可能性。</p>
+        </div>
+        
+        <div class="glass-card about-card" data-animate="fadeInUp" style="transition-delay: 0.2s">
+          <div class="card-icon">✺</div>
+          <h3>技术的感知</h3>
+          <p>在AI快速重塑世界的当下，我更关心技术如何被“感知”。工具不应只是强大，而应优雅；系统不应只是智能，而应克制。我希望参与构建这样的产品——像一块玻璃，越透明，越难被注意，却承载了整个世界的映射。</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ── PROJECTS ────────────────────────────────────── -->
-  <section id="projects">
-    <div class="project-item">
-      <div class="project-left">
-        <h3>Node.js Web Service</h3>
+  <!-- ── EXPERIENCE ────────────────────────────────────── -->
+  <section id="experience" class="section-padding">
+    <div class="container">
+      <div class="section-header" data-animate="fadeInUp">
+        <h2 class="serif-title">Experience</h2>
+        <p class="section-subtitle">实习经历</p>
       </div>
-      <div class="project-right">
-        <p class="project-desc">A production-grade web service built with Node.js and Express, featuring RESTful APIs, authentication, and database integration.</p>
-        <ul class="project-features">
-          <li>RESTful API design with Express.js</li>
-          <li>MySQL &amp; MongoDB data layer</li>
-          <li>JWT authentication &amp; middleware</li>
+
+      <div class="timeline">
+        <div class="timeline-item glass-card" data-animate="fadeInLeft">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>广州奥威亚电子科技有限公司</h3>
+              <span class="timeline-date">2025.11 - 2026.02</span>
+            </div>
+            <div class="timeline-role">AI 产品策划助理</div>
+            <ul class="feature-list">
+              <li><strong>产品范围定义与架构设计：</strong>面向特定用户，定义教育查询、设备控制等四个领域的AI对话产品能力边界；参与基于 Google ADK 框架的多智能体路由架构设计，每域配置工具集与安全策略；辅助完成课程分析与校规查询等能力的对话接入，避免跨领域误操作与幻觉风险。</li>
+              <li><strong>能力边界识别与补偿机制设计：</strong>参与设计服务层路由补偿方案，避免 LLM 在单轮调用内连续执行「路由设置 → 子智能体转交」两步工具时的不稳定性；在事件流中检测路由工具的执行完成信号，由后端系统直接派发至目标子智能体，消除「识别意图但无回复」的中间态。</li>
+              <li><strong>教育场景 AI 输出规范设计：</strong>针对教师/学生表现点评的合规与可追溯需求，参与设计并实施结构化 AI 输出规范；要求对于触发校规知识库（RAG）检索的违规行为逐条标注违反条款，并对易混淆阈值进行显式歧义消除，在可信度、合规性与回复效率之间做出平衡。</li>
+              <li><strong>引导式多轮对话设计：</strong>发现用户在单次交互后出现的体验断点，设计后续问题建议（Follow-ups）机制：后端响应体新增 followups 字段，基于回复内容生成相关建议问题，前端以可点击按钮呈现，实现延续对话输入零成本。</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ──────────────────────────────────────── -->
+  <section id="projects" class="section-padding">
+    <div class="container">
+      <div class="section-header" data-animate="fadeInUp">
+        <h2 class="serif-title">Projects</h2>
+        <p class="section-subtitle">项目经历与开源贡献</p>
+      </div>
+
+      <div class="project-showcase glass-card" data-animate="scaleIn">
+        <div class="project-header">
+          <h3>Steven - 产品经理助手</h3>
+          <a href="https://github.com/meloer101/PM-Assiatant" class="link-with-icon" target="_blank">View on GitHub ↗</a>
+        </div>
+        <ul class="feature-list">
+          <li><strong>产品形态定义与多智能体工作流架构设计：</strong>面向产品经理用户，定义「行业研究到 PRD」一站式工作台的产品形态与核心使用流程；参与基于 Google ADK 框架的多智能体路由架构设计，采用 root Agent 仅承担任务分发、研究与 PRD pipeline 各自独立的解耦方案，并在研究计划与研究报告两处引入人工确认节点（HITL），避免算力浪费。</li>
+          <li><strong>AI 研究质量评估闭环与迭代上限设计：</strong>设计输出的质量检测机制，在检索完成后引入评估 Agent 对研究结果进行 pass/fail 打分，并在不通过时自动生成补充查询问题、触发二次检索；设计可配置的最大迭代次数上限，在研究质量、响应延迟与调用成本之间做出显式平衡。</li>
+          <li><strong>外部研究与内部知识库融合的 PRD 生成：</strong>参与设计 PRD 生成阶段「外部研究报告 + 公司内部知识库」双来源融合方案，基于 ChromaDB 实现向量检索，支持多格式文档导入；设计显式降级策略，空库时由检索 Agent 说明仅依据外部研究继续生成。</li>
+          <li><strong>AI 研究输出的引用规范与来源可追溯机制：</strong>针对事实性结论的可验证性需求，参与设计统一引用标注规范：在检索回调中收集所有来源并分配结构化 ID；前后端协同将标签替换为带标题的可点击链接，防止模型臆造引用或来源丢失。</li>
         </ul>
       </div>
-    </div>
-    <div class="project-item">
-      <div class="project-left">
-        <h3>Node.js Web Service</h3>
-      </div>
-      <div class="project-right">
-        <p class="project-desc">A production-grade web service built with Node.js and Express, featuring RESTful APIs, authentication, and database integration.</p>
-        <ul class="project-features">
-          <li>RESTful API design with Express.js</li>
-          <li>MySQL &amp; MongoDB data layer</li>
-          <li>JWT authentication &amp; middleware</li>
-        </ul>
-      </div>
-    </div>
-    <div class="project-item">
-      <div class="project-left">
-        <h3>Node.js Web Service</h3>
-      </div>
-      <div class="project-right">
-        <p class="project-desc">A production-grade web service built with Node.js and Express, featuring RESTful APIs, authentication, and database integration.</p>
-        <ul class="project-features">
-          <li>RESTful API design with Express.js</li>
-          <li>MySQL &amp; MongoDB data layer</li>
-          <li>JWT authentication &amp; middleware</li>
-        </ul>
+
+      <div class="github-repos" data-animate="fadeInUp">
+        <h3 class="sub-heading">更多开源项目</h3>
+        <div class="repo-grid">
+          <a href="https://github.com/meloer101/BanTu-Free-Resource-Platform-for-XMUers" class="repo-card glass-card magnetic-btn" target="_blank">
+            <div class="repo-icon">🎓</div>
+            <h4>BanTu 资源平台</h4>
+            <p>厦门大学资源开源平台</p>
+          </a>
+          <a href="https://github.com/meloer101/EW-backend" class="repo-card glass-card magnetic-btn" target="_blank">
+            <div class="repo-icon">📝</div>
+            <h4>EW-backend</h4>
+            <p>社会科学论文写作助手</p>
+          </a>
+          <a href="https://github.com/meloer101/Skills-For-best-PMs" class="repo-card glass-card magnetic-btn" target="_blank">
+            <div class="repo-icon">🧠</div>
+            <h4>PM Skills</h4>
+            <p>产品经理研究 Skills 仓库</p>
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ── BLOG ──────────────────────────────────────────── -->
-  <section id="blog">
-    <div class="blog-left">
-      <h2 class="blog-title">Blog</h2>
-      <ul class="blog-list">
-        <li class="blog-item">
-          <span class="blog-date">April 9, 2024</span>
-          <span class="blog-name"><a href="https://next-blog-jacoy-yue.vercel.app/blog/vim" target="_blank" rel="noopener">森林里分出了两条路：AI创业的两种不同路径</a></span>
-        </li>
-        <div class="blog-line"></div>
-        <li class="blog-item">
-          <span class="blog-date">April 9, 2024</span>
-          <span class="blog-name"><a href="https://next-blog-jacoy-yue.vercel.app/blog/spaces-vs-tabs" target="_blank" rel="noopener">好的设计——简单与复杂的平衡ep.1</a></span>
-        </li>
-        <div class="blog-line"></div>
-        <li class="blog-item">
-          <span class="blog-date">April 9, 2024</span>
-          <span class="blog-name">森林里分出了两条路：AI创业的两种不同路径</span>
-        </li>
-        <div class="blog-line"></div>
-      </ul>
-    </div>
-    <div class="blog-right">
-      <img src="src/Blog.png" alt="Blog" class="blog-img">
+  <!-- ── SKILLS & SUMMARY ──────────────────────────────── -->
+  <section id="skills" class="section-padding">
+    <div class="container">
+      <div class="section-header" data-animate="fadeInUp">
+        <h2 class="serif-title">Summary</h2>
+        <p class="section-subtitle">个人总结与技能</p>
+      </div>
+
+      <div class="summary-grid">
+        <div class="summary-item glass-card" data-animate="fadeInUp">
+          <h3>产品与设计</h3>
+          <p>具备扎实的 AI 产品基础能力与快速学习能力，熟练使用 <strong>Figma、Framer、Xmind</strong> 等工具进行产品设计与原型搭建，并能够结合 Relume 等 AI 设计工具提升设计效率。具备良好的用户洞察能力，能够将用户需求转化为可落地的产品方案，并具备基本的数据分析与效果评估意识，持续推动产品优化。</p>
+        </div>
+        
+        <div class="summary-item glass-card" data-animate="fadeInUp" style="transition-delay: 0.1s">
+          <h3>AI 与工程协同</h3>
+          <p>熟练使用 <strong>Claude Code、Cursor、Codex</strong> 等 AI 编程工具，具备一定的技术理解能力与工程协同能力，能够通过 AI 工具快速实现产品原型与功能验证。持续关注 AI 领域前沿发展，对 <strong>Skills、MCP</strong> 等新范式有深入理解，并通过实际项目进行探索与应用，具备较强的技术敏感度与实践能力。</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- ── CTA / CONTACT ─────────────────────────────────── -->
-  <section id="contact">
-    <img src="src/CTA1.png" alt="" class="cta-deco cta-deco--left">
-    <div class="cta-center">
-      <p class="cta-text">Curious about what we can create together? Let's bring something extraordinary to life!</p>
-      <div class="social-icons">
-        <a href="https://github.com/meloer101" target="_blank" rel="noopener">
-          <img src="src/Github.png" alt="GitHub">
-        </a>
-        <a href="#" target="_blank" rel="noopener">
-          <img src="src/Ins.png" alt="Instagram">
-        </a>
-        <a href="mailto:jabyu80@gmail.com">
-          <img src="src/Gmail.png" alt="Gmail">
-        </a>
+  <!-- ── CONTACT ───────────────────────────────────────── -->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="contact-card glass-card" data-animate="scaleIn">
+        <h2 class="serif-title">Let's Connect</h2>
+        <p>期待与您交流产品、设计与技术的无限可能。</p>
+        
+        <div class="contact-links">
+          <a href="tel:18030052769" class="contact-item magnetic-btn">
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">180 3005 2769</span>
+          </a>
+          <a href="mailto:jacobyu80@gmail.com" class="contact-item magnetic-btn">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">jacobyu80@gmail.com</span>
+          </a>
+          <div class="contact-item">
+            <span class="contact-label">QQ</span>
+            <span class="contact-value">2497289114</span>
+          </div>
+        </div>
       </div>
     </div>
-    <img src="src/CTA2.png" alt="" class="cta-deco cta-deco--right">
   </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Jacob Yu. Designed with ✦</p>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
