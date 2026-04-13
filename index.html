@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jacoy Yu — Developer & Designer</title>
+  <meta name="description" content="Jacoy Yu — Developer and Designer based in Los Angeles. Crafting interfaces where code meets visual intention.">
+  <meta name="author" content="Jacoy Yu">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-bar" id="scroll-bar"></div>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">JACOY YU</a>
+    <div class="nav-links">
+      <a href="#work"    class="nav-link"><span class="nav-num">01</span>&nbsp;WORK</a>
+      <a href="#contact" class="nav-link"><span class="nav-num">02</span>&nbsp;CONTACT</a>
+    </div>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <section class="hero" id="hero">
+
+    <!-- Top bar: meta left, roles right (z-index above photo) -->
+    <div class="hero-topbar">
+      <div class="hero-meta">
+        <span class="mono-label">©2025</span>
+        <span class="mono-label">LA</span>
+      </div>
+      <div class="hero-roles" aria-hidden="true">
+        <span class="mono-label">DEVELOPER</span>
+        <span class="mono-label">·</span>
+        <span class="mono-label">DESIGNER</span>
+      </div>
+    </div>
+
+    <!-- Portrait: absolutely centred, behind text -->
+    <div class="hero-photo-wrap">
+      <div class="hero-photo" aria-label="Portrait of Jacoy Yu">
+        <img
+          src="Resource/image%202.svg"
+          alt="Jacoy Yu"
+          class="hero-photo-img"
+        />
+      </div>
+    </div>
+
+    <!-- Bottom block: about → badges → name → tagline/CTAs -->
+    <div class="hero-footer">
+      <div class="hero-about">
+        <p class="about-lead">
+          Based in Los Angeles.<br>
+          I build things that work and look like they should.
+        </p>
+      </div>
+      <div class="hero-badges">
+        <span class="badge">DEVELOPER</span>
+        <span class="badge">DESIGNER</span>
+        <span class="badge badge--geo">LA</span>
+      </div>
+      <div class="hero-text">
+        <h1 class="hero-name" id="hero-name">JACOY YU<span class="accent">®</span></h1>
+        <div class="hero-bottom">
+          <p class="hero-tagline">
+            Crafting interfaces where code meets visual intention.
+          </p>
+          <div class="hero-actions">
+            <a href="https://github.com/meloer101" target="_blank" rel="noopener" class="btn btn--solid">GitHub ↗</a>
+            <a href="#work" class="btn btn--ghost">Explore work ↓</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-rule"></div>
+    </div>
+
+  </section>
+
+  <!-- ── Work ── -->
+  <section class="section work" id="work">
+
+    <div class="section-header fade-up">
+      <span class="section-num">01</span>
+      <div class="flex-rule"></div>
+      <span class="section-tag">WORK</span>
+    </div>
+
+    <div class="work-cols fade-up">
+      <span class="col-label">PROJECT</span>
+      <span class="col-label">STACK</span>
+      <span class="col-label col-label--right">YEAR</span>
+    </div>
+
+    <div id="work-list"></div>
+
+  </section>
+
+  <!-- ── Contact ── -->
+  <section class="section contact" id="contact">
+
+    <div class="section-header fade-up">
+      <span class="section-num">02</span>
+      <div class="flex-rule flex-rule--short"></div>
+      <span class="section-tag">CONTACT</span>
+    </div>
+
+    <div class="contact-body fade-up">
+      <h2 class="contact-headline">Let's build<br><em>something.</em></h2>
+      <div class="contact-links">
+        <a href="https://github.com/meloer101" target="_blank" rel="noopener" class="contact-btn">GITHUB ↗</a>
+        <!-- TODO: Replace with your email -->
+        <a href="mailto:hello@jacoyyu.dev" class="contact-btn">EMAIL ↗</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="footer-rule"></div>
+    <div class="footer-inner">
+      <span class="footer-logo">JACOY YU<span class="accent">®</span></span>
+      <span class="mono-label">©2025&nbsp;&nbsp;LA</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
